@@ -1,0 +1,31 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.content h3 {
+  color: var(--color-text);
+  font-size: var(--font-size-md);
+  margin-top: var(--spacing-sm);
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+}
+
+.checkbox input {
+  margin-top: 4px;
+  accent-color: var(--color-primary);
+}
+
+.link {
+  color: var(--color-primary);
+  text-decoration: underline;
+}

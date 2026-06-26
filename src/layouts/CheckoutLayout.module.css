@@ -1,0 +1,66 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-background);
+}
+
+.header {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  padding: var(--spacing-lg) var(--spacing-md);
+  text-align: center;
+  border-bottom: 4px solid var(--color-accent);
+}
+
+.header h1 {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.header strong {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.main {
+  flex: 1;
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.secure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-xs);
+  opacity: 0.6;
+  margin-top: var(--spacing-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.lock {
+  width: 10px;
+  height: 8px;
+  border: 2px solid currentcolor;
+  border-radius: 2px;
+  position: relative;
+}
+
+.lock::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 5px;
+  border: 2px solid currentcolor;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  top: -6px;
+  left: 0;
+}

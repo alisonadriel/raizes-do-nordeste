@@ -1,0 +1,123 @@
+.homeWrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .homeWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.heroPanel {
+  background: var(--color-brand);
+  color: var(--color-paper);
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroPanel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 12px,
+    rgb(0 0 0 / 8%) 12px,
+    rgb(0 0 0 / 8%) 24px
+  );
+  pointer-events: none;
+}
+
+.tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  border: 1.5px solid rgb(250 244 232 / 50%);
+  padding: 0.35rem 0.65rem;
+  margin-bottom: var(--spacing-lg);
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  position: relative;
+  z-index: 1;
+}
+
+.titleAccent {
+  display: block;
+  color: var(--color-accent);
+  -webkit-text-stroke: 1px var(--color-paper);
+}
+
+.subtitle {
+  margin-top: var(--spacing-lg);
+  font-size: var(--font-size-md);
+  line-height: 1.65;
+  max-width: 360px;
+  opacity: 0.9;
+  position: relative;
+  z-index: 1;
+}
+
+.contentPanel {
+  padding: var(--spacing-xl) var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  background: var(--color-background);
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: var(--border-width) solid var(--color-ink);
+  box-shadow: var(--shadow-md);
+}
+
+.feature {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-paper);
+  border-bottom: var(--border-width) solid var(--color-ink);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.feature:last-child {
+  border-bottom: none;
+}
+
+.featureNum {
+  font-family: var(--font-display);
+  font-size: var(--font-size-xl);
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}

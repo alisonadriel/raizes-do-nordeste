@@ -1,0 +1,64 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-lg);
+  background: var(--color-brand);
+  position: relative;
+}
+
+.layout::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 16px,
+    rgb(0 0 0 / 6%) 16px,
+    rgb(0 0 0 / 6%) 32px
+  );
+}
+
+.main {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-paper);
+}
+
+.logo h1 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-2xl);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.logo p {
+  margin-top: var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.cardWrap {
+  background: var(--color-paper);
+  border: var(--border-width) solid var(--color-ink);
+  box-shadow: var(--shadow-lg);
+  padding: var(--spacing-xs);
+}
+
+.cardInner {
+  border: 1px dashed var(--color-border-soft);
+  padding: var(--spacing-lg);
+}

@@ -1,0 +1,73 @@
+.card {
+  display: flex;
+  gap: 0;
+  background: var(--color-paper);
+  border: var(--border-width) solid var(--color-ink);
+  box-shadow: var(--shadow-sm);
+}
+
+.emoji {
+  width: 64px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: var(--color-paper-dark);
+  border-right: var(--border-width) solid var(--color-ink);
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+  padding: var(--spacing-md);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-xs);
+}
+
+.price {
+  font-weight: 700;
+  color: var(--color-brand);
+  font-size: var(--font-size-sm);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+}
+
+.qtyBtn {
+  width: 28px;
+  height: 28px;
+  border: var(--border-width) solid var(--color-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  background: var(--color-paper);
+  box-shadow: 1px 1px 0 var(--color-ink);
+}
+
+.qty {
+  min-width: 24px;
+  text-align: center;
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
+.remove {
+  margin-left: auto;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-error);
+  text-decoration: underline;
+}

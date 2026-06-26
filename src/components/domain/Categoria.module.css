@@ -1,0 +1,33 @@
+.list {
+  display: flex;
+  gap: var(--spacing-sm);
+  overflow-x: auto;
+  padding-bottom: var(--spacing-xs);
+  scrollbar-width: none;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  flex-shrink: 0;
+  padding: 0.45rem 0.9rem;
+  border: var(--border-width) solid var(--color-ink);
+  background: var(--color-paper);
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  box-shadow: var(--shadow-sm);
+}
+
+.active {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.icon {
+  margin-right: 0.35rem;
+}

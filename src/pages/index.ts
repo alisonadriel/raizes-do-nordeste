@@ -1,0 +1,16 @@
+export { HomePage } from './HomePage';
+export { LoginPage } from './LoginPage';
+export { RegisterPage } from './RegisterPage';
+export { UnitsPage } from './UnitsPage';
+export { MenuPage } from './MenuPage';
+export { ProductPage } from './ProductPage';
+export { CartPage } from './CartPage';
+export { CheckoutPage } from './CheckoutPage';
+export { PaymentPage } from './PaymentPage';
+export { ConfirmationPage } from './ConfirmationPage';
+export { OrderTrackingPage } from './OrderTrackingPage';
+export { HistoryPage } from './HistoryPage';
+export { ProfilePage } from './ProfilePage';
+export { LoyaltyPage } from './LoyaltyPage';
+export { PromotionsPage } from './PromotionsPage';
+export { ErrorPage, NotFoundPage } from './ErrorPage';

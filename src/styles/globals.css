@@ -1,0 +1,15 @@
+@import './variables.css';
+@import './reset.css';
+
+body {
+  background-color: var(--color-background);
+  background-image:
+    linear-gradient(90deg, rgb(26 16 8 / 4%) 1px, transparent 1px),
+    linear-gradient(rgb(26 16 8 / 4%) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-paper);
+}

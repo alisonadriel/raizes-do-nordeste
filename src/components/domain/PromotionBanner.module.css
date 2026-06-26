@@ -1,0 +1,57 @@
+.banner {
+  display: flex;
+  gap: 0;
+  border: var(--border-width) solid var(--color-ink);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.emoji {
+  width: 64px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: var(--color-accent);
+  border-right: var(--border-width) solid var(--color-ink);
+}
+
+.content {
+  padding: var(--spacing-md);
+  background: var(--color-paper);
+  flex: 1;
+}
+
+.content h3 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-xs);
+}
+
+.content p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.coupon {
+  margin-top: var(--spacing-sm);
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.inactive {
+  opacity: 0.5;
+}
+
+.inactive .emoji {
+  background: var(--color-border-soft);
+}
